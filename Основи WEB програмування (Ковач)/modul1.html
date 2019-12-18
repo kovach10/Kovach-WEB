@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modul1</title>
+    <script>
+        function toGrn() {
+            let val = document.getElementById("Yena").value / 4.66;
+            document.getElementById("Grn").value = val;
+        }
+
+        function toYena() {
+            let val = document.getElementById("Grn").value * 4.66;
+            document.getElementById("Yena").value = val;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" onchange="toGrn()" id="Yena"> - Єна
+    <br />
+    <br />
+    <input type="number" onchange="toYena()" id="Grn"> - Гривня
+</body>
+</html>
